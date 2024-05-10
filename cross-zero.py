@@ -39,13 +39,13 @@ def win_check():
         symb = []
         for с in cord:
             symb.append(field[с[0]][с[1]])
-            if symb == ["X", "X", "X"]:
-                print("Крестик выиграл! Поздравляю")
-                return True
-            if symb == ["O", "O", "O"]:
-                print("Нолик выиграл! Поздравляю")
-                return True
-        return False
+        if symb == ["X", "X", "X"]:
+            print("Крестик выиграл! Поздравляю")
+            return True
+        if symb == ["O", "O", "O"]:
+            print("Нолик выиграл! Поздравляю")
+            return True
+    return False
 
 rules()
 
